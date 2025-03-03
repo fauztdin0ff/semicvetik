@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?><svg viewBox="0 0 66 40" xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
+   <style>
+      :root>svg {
+         display: none
+      }
+
+      :root>svg:target {
+         display: block
+      }
+   </style><svg fill="none" viewBox="0 0 24 24" id="basket" xmlns="http://www.w3.org/2000/svg">
+      <path d="m8 17.5-3-14H3M8.25 17.5h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+         stroke-linejoin="round" />
+      <circle cx="18.25" cy="19.25" r="1.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+         stroke-linejoin="round" />
+      <circle cx="8.25" cy="19.25" r="1.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+         stroke-linejoin="round" />
+      <path d="M5.645 6.5H20a1 1 0 0 1 .966 1.258l-1.6 6a1 1 0 0 1-.965.742H7.359" stroke="currentColor" stroke-width="1.5"
+         stroke-linecap="round" stroke-linejoin="round" />
+   </svg><svg fill="none" viewBox="0 0 25 32" id="benefits-1" xmlns="http://www.w3.org/2000/svg">
+      <path d="M24.165 19.333C24.165 25.776 18.942 31 12.5 31 6.055 31 .832 25.776.832 19.333" stroke="currentColor"
+         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M24.165 19.333C17.722 19.333 12.5 24.556 12.5 31c0-6.444-5.224-11.667-11.667-11.667" stroke="currentColor"
+         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path clip-rule="evenodd"
+         d="M21.758 8.407V2.433a.833.833 0 0 0-1.32-.676l-2.335 1.681a1.67 1.67 0 0 1-1.948 0l-3.168-2.281a.83.83 0 0 0-.974 0l-3.17 2.281a1.67 1.67 0 0 1-1.948 0L4.56 1.757a.834.834 0 0 0-1.322.676v5.974a9.26 9.26 0 0 0 18.52 0Z"
+         stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+   </svg><svg fill="none" viewBox="0 0 33 32" id="benefits-2" xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M12.3 28.907c.492-.065.99.068 1.381.37l1.806 1.386a1.659 1.659 0 0 0 2.022 0l1.874-1.44c.35-.268.792-.386 1.23-.328l2.343.309a1.662 1.662 0 0 0 1.753-1.012l.902-2.181c.168-.409.492-.732.9-.9l2.181-.903a1.661 1.661 0 0 0 1.012-1.752l-.296-2.26a1.862 1.862 0 0 1 .37-1.38l1.385-1.806a1.659 1.659 0 0 0 0-2.022l-1.439-1.874a1.658 1.658 0 0 1-.328-1.23l.308-2.344a1.662 1.662 0 0 0-1.012-1.752l-2.18-.902a1.655 1.655 0 0 1-.901-.9l-.902-2.181a1.661 1.661 0 0 0-1.753-1.012l-2.344.308a1.65 1.65 0 0 1-1.227-.325l-1.874-1.439a1.659 1.659 0 0 0-2.023 0l-1.874 1.439c-.35.267-.792.385-1.229.328l-2.344-.308A1.662 1.662 0 0 0 8.29 3.808l-.9 2.181c-.17.407-.494.73-.901.9l-2.18.9a1.662 1.662 0 0 0-1.013 1.753l.308 2.344c.057.437-.061.88-.328 1.228l-1.439 1.874a1.659 1.659 0 0 0 0 2.022l1.439 1.874c.268.35.387.792.328 1.23l-.308 2.343a1.662 1.662 0 0 0 1.012 1.753l2.181.902c.409.168.732.492.9.9l.902 2.181a1.661 1.661 0 0 0 1.753 1.012l2.257-.298"
+         stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="m21.165 13.667-5.837 5.837-3.5-3.501" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+         stroke-linejoin="round" />
+   </svg><svg fill="none" viewBox="0 0 36 27" id="benefits-3" xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M16.773 25.709c9.796 0 12.2-12.19 17.813-15.43a21.793 21.793 0 0 0-17.813-8.944M16.773 25.709c-6.73 0-12.187-5.456-12.187-12.188 0-6.73 5.457-12.187 12.187-12.187"
+         stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M17.675 12.645A24.752 24.752 0 0 0 .835 23.833" stroke="currentColor" stroke-width="1.5"
+         stroke-linecap="round" stroke-linejoin="round" />
+   </svg><svg fill="none" viewBox="0 0 41 40" id="benefits-4" xmlns="http://www.w3.org/2000/svg">
+      <path d="m17.166 20-6.424 9.672" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+         stroke-linejoin="round" />
+      <path clip-rule="evenodd"
+         d="M15.5 5h10v3.333c0 .92-.746 1.667-1.667 1.667h-6.666c-.92 0-1.667-.746-1.667-1.667V5Z" stroke="currentColor"
+         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path
+         d="M5.5 25.18v6.946A2.874 2.874 0 0 0 8.374 35h8.583M5.5 10V8.333A3.333 3.333 0 0 1 8.833 5h23.334A3.333 3.333 0 0 1 35.5 8.333v23.334A3.333 3.333 0 0 1 32.167 35h-4.015"
+         stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path
+         d="m5.5 25.18 11.997 10.283a5 5 0 0 0 3.254 1.204h5.48a1.917 1.917 0 0 0 1.433-3.19l-3.83-4.31V27.5h3.437a2.395 2.395 0 0 0 2.396-2.395v0c0-1.09-.737-2.044-1.792-2.318L17.167 20 5.5 10"
+         stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+   </svg><svg fill="none" viewBox="0 0 18 16" id="book" xmlns="http://www.w3.org/2000/svg">
+      <path clip-rule="evenodd"
+         d="M9 14.666c-1.706-1.544-4.283-1.816-6.297-.817-.554.274-1.203-.1-1.203-.719V3.703c0-.506.23-.99.63-1.3C4.204.807 7.128.997 9 2.974c1.873-1.977 4.796-2.167 6.87-.568.4.308.63.793.63 1.298v9.427c0 .618-.65.993-1.203.718-2.014-.998-4.591-.726-6.297.818v0Z"
+         stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M8.999 14.666V2.975" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+         stroke-linejoin="round" />
+   </svg><svg fill="none" viewBox="0 0 10 6" id="chevron" xmlns="http://www.w3.org/2000/svg">
+      <path d="m1 1 4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+   </svg><svg fill="none" viewBox="0 0 6 10" id="chevron-right" xmlns="http://www.w3.org/2000/svg">
+      <path d="m1 9 4-4-4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+   </svg><svg fill="none" viewBox="0 0 20 20" id="filters" xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M16 3h3M1 3h11M8 10h11M1 10h3M16 17h3M1 17h11M15.414 1.586a2 2 0 1 1-2.828 2.828 2 2 0 0 1 2.828-2.828M7.414 8.586a2 2 0 1 1-2.828 2.828 2 2 0 0 1 2.828-2.828M15.414 15.586a2 2 0 1 1-2.828 2.828 2 2 0 0 1 2.828-2.828"
+         stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+   </svg><svg fill="none" viewBox="0 0 18 16" id="heart" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+         d="M16.494 2.493a5.173 5.173 0 0 1-.275 7.554l-6.565 5.69a.997.997 0 0 1-1.308 0l-6.565-5.69a5.173 5.173 0 0 1-.275-7.554 5.128 5.128 0 0 1 6.996-.257L9 2.668l.498-.432a5.128 5.128 0 0 1 6.996.257Z"
+         fill="currentColor" />
+   </svg><svg fill="none" viewBox="0 0 24 24" id="location" xmlns="http://www.w3.org/2000/svg">
+      <path clip-rule="evenodd" d="M12 13v0a3 3 0 0 1-3-3v0a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v0a3 3 0 0 1-3 3Z"
+         stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path clip-rule="evenodd" d="M12 21s-7-5.75-7-11a7 7 0 1 1 14 0c0 5.25-7 11-7 11Z" stroke="currentColor"
+         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+   </svg><svg fill="none" viewBox="0 0 16 16" id="star-fill" xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M3.61 15.444c-.385.197-.823-.15-.745-.593l.83-4.73L.172 6.765c-.33-.313-.158-.887.283-.95l4.898-.696L7.537.794c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.44.062.612.636.283.95l-3.523 3.355.83 4.73c.078.443-.36.79-.746.592l-4.391-2.255-4.39 2.255h.002Z"
+         fill="currentColor" />
+   </svg><svg fill="none" viewBox="0 0 16 16" id="starr-half" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+         d="M5.36 5.119 7.544.792A.516.516 0 0 1 8.006.5c.183 0 .366.097.465.292l2.184 4.327 4.898.696a.537.537 0 0 1 .453.505.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592l-4.391-2.256-4.39 2.256a.517.517 0 0 1-.145.05c-.341.06-.668-.254-.6-.642l.83-4.73L.179 6.765a.55.55 0 0 1-.171-.403c0-.106.03-.21.084-.302a.513.513 0 0 1 .37-.245l4.898-.696Zm2.646 6.908c.08 0 .16.018.232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .163-.505l2.906-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.008 2.223l-.002.003v9.801Z"
+         fill="currentColor" />
+   </svg><svg fill="none" viewBox="0 0 24 24" id="watch" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8.557 3.687a8.998 8.998 0 0 1 11.756 4.87 8.998 8.998 0 0 1-4.87 11.756A8.998 8.998 0 1 1 8.557 3.687"
+         stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M11.719 7.985v4.651l3.656 2.23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+         stroke-linejoin="round" />
+   </svg><svg fill="none" viewBox="0 0 66 20" id="yandex" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#oa)">
+         <path
+            d="M62.926 17.415c1.294 0 2.212-.245 2.895-.773v-2.396c-.701.509-1.547.83-2.734.83-1.996 0-2.823-1.623-2.823-4.189 0-2.698 1.007-4.075 2.841-4.075 1.08 0 2.14.396 2.698.773v-2.49c-.593-.34-1.619-.585-3.021-.585-3.58 0-5.431 2.698-5.431 6.472.018 4.132 1.834 6.433 5.575 6.433Zm-17.498-1.094v-2.396c-.864.622-2.338 1.17-3.687 1.17-2.05 0-2.824-1.02-2.95-3.095h6.762v-1.547c0-4.32-1.816-5.943-4.603-5.943-3.417 0-5.036 2.736-5.036 6.49 0 4.321 2.032 6.415 5.593 6.415 1.78 0 3.093-.509 3.92-1.094ZM19.765 4.736v4.906h-3.74V4.736h-2.806V17.17h2.805v-5.189h3.74v5.19h2.806V4.735h-2.805Zm15.448 10.095h-1.241V4.736h-8.165v1.057c0 3.038-.18 6.962-1.169 9.037h-.899V20h2.59v-2.83h6.276V20h2.59v-5.17h.018Zm19.152 2.34h3.183l-4.495-6.699 3.956-5.736h-2.824l-3.956 5.736V4.736h-2.805V17.17h2.805v-6.113l4.136 6.113ZM40.878 6.81c1.384 0 1.816 1.208 1.816 2.774v.246h-3.903c.072-1.982.756-3.02 2.087-3.02Zm-9.712 8.02H27.21c.773-1.868.99-5.265.99-7.416v-.377h2.966v7.793Z"
+            fill="currentColor" />
+         <path
+            d="M10.88 17.17H8.02V2.32H6.745c-2.338 0-3.56 1.227-3.56 3.057 0 2.076.844 3.038 2.589 4.265L7.21 10.66l-4.136 6.51H0l3.723-5.812C1.583 9.755.378 8.188.378 5.548.378 2.244 2.572 0 6.726 0h4.136l.018 17.17Z"
+            fill="currentColor" />
+      </g>
+      <defs>
+         <clipPath id="oa">
+            <path fill="currentColor" d="M0 0h66v20H0z" />
+         </clipPath>
+      </defs>
+   </svg>
+</svg>
+
+<!--
+   <svg>
+      <use xlink:href="img/icons/icons.svg#search"></use>
+   </svg>
+-->

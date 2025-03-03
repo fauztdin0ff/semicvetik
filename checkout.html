@@ -1,0 +1,2138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <script src="js/ahunter_suggest.js"></script>
+   <link rel="stylesheet" href="css/air-datepicker.min.css">
+   <link rel="stylesheet" href="css/lightgallery.css">
+   <link rel="stylesheet" href="css/lg-thumbnail.css">
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>Оформление заказа</title>
+</head>
+
+<body>
+   <section class="wrapper">
+      <header style="background: rgb(98, 194, 63);">
+   <div class="header__body" style=" display: flex;justify-content: space-between;">
+      <div style="padding: 20px;display: flex;flex-wrap: wrap;gap: 10px;">
+         <a href="catalog.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Каталог</a>
+         <a href="product.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Страница товара</a>
+         <a href="checkout.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Оформить заказ</a>
+         <a href="delivery.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Доставка</a>
+         <a href="cabinet.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Кабинет</a>
+         <a href="about.html" style="color: #fff;font-size: 12px;text-decoration: underline;">О нас</a>
+         <a href="blog.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Блог</a>
+         <a href="article.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Статья блога</a>
+         <a href="reviews.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Отзывы</a>
+         <a href="thanks.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Благодарности</a>
+         <a href="employees.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Сотрудники</a>
+         <a href="vacancies.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Вакансии</a>
+         <a href="vacancy.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Вакансия</a>
+         <a href="franchise.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Франшиза</a>
+         <a href="login.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Войти</a>
+         <button class="open-cart-btn" style="color: #fff;font-size: 12px;text-decoration: underline;">Корзина</button>
+         <a href="return-policy.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Политика
+            возврата</a>
+         <a href="public-offer.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Публичная
+            оферта</a>
+         <a href="privacy-policy.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Политика
+            конфиденциальности</a>
+         <a href="personal-data.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Согласие на
+            обработку персональных данных</a>
+         <a href="cookies.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Согласие на сбор и
+            обработку файлов cookie</a>
+      </div>
+   </div>
+</header>
+      <main style="">
+         <section class="checkout">
+            <div class="checkout__body container">
+               <div class="checkout__title">Оформление заказа</div>
+               <a href="catalog.html" class="checkout__go-back">
+                  <svg>
+                     <use xlink:href="img/icons/icons.svg#arrow"></use>
+                  </svg>
+                  Вернуться в корзину
+               </a>
+               <div class="checkout__content">
+                  <form class="checkout__form">
+                     <div class="checkout__tabs">
+                        <div class="checkout__tab" data-step="1">
+                           <div class="checkout__tab-head">
+                              <div class="checkout__tab-check">
+                                 <svg>
+                                    <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                 </svg>
+                              </div>
+                              <div class="checkout__tab-step">1/5</div>
+                              <div class="checkout__tab-name">Заказчик</div>
+                           </div>
+                           <div class="checkout__tab-content"></div>
+                        </div>
+                        <div class="checkout__tab-arrow">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#arrow"></use>
+                           </svg>
+                        </div>
+                        <div class="checkout__tab" data-step="2">
+                           <div class="checkout__tab-head">
+                              <div class="checkout__tab-check">
+                                 <svg>
+                                    <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                 </svg>
+                              </div>
+                              <div class="checkout__tab-step">2/5</div>
+                              <div class="checkout__tab-name">Способ получения</div>
+                           </div>
+                           <div class="checkout__tab-content"></div>
+                        </div>
+                        <div class="checkout__tab-arrow">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#arrow"></use>
+                           </svg>
+                        </div>
+                        <div class="checkout__tab" data-step="3">
+                           <div class="checkout__tab-head">
+                              <div class="checkout__tab-check">
+                                 <svg>
+                                    <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                 </svg>
+                              </div>
+                              <div class="checkout__tab-step">3/5</div>
+                              <div class="checkout__tab-name">Упаковка</div>
+                           </div>
+                           <div class="checkout__tab-content"></div>
+                        </div>
+                        <div class="checkout__tab-arrow">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#arrow"></use>
+                           </svg>
+                        </div>
+                        <div class="checkout__tab" data-step="4">
+                           <div class="checkout__tab-head">
+                              <div class="checkout__tab-check">
+                                 <svg>
+                                    <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                 </svg>
+                              </div>
+                              <div class="checkout__tab-step">4/5</div>
+                              <div class="checkout__tab-name">Оплата</div>
+                           </div>
+                           <div class="checkout__tab-content"></div>
+                        </div>
+                        <div class="checkout__tab-arrow">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#arrow"></use>
+                           </svg>
+                        </div>
+                        <div class="checkout__tab" data-step="5">
+                           <div class="checkout__tab-head">
+                              <div class="checkout__tab-check">
+                                 <svg>
+                                    <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                 </svg>
+                              </div>
+                              <div class="checkout__tab-step">5/5</div>
+                              <div class="checkout__tab-name">Дополнительные товары</div>
+                           </div>
+                           <div class="checkout__tab-content"></div>
+                        </div>
+                     </div>
+                     <div class="checkout__steps">
+                        <div class="checkout__step step-1" data-step="1">
+                           <div class="checkout__row">
+                              <div class="checkout__item">
+                                 <input type="text" name="name" autocomplete="name" placeholder="Имя *" required>
+                              </div>
+                              <div class="checkout__item">
+                                 <input type="text" name="telephone" class="tel-mask" autocomplete="tel"
+                                    placeholder="Номер телефона *" required>
+                              </div>
+                           </div>
+                           <div class="checkout__row">
+                              <div class="checkout__item">
+                                 <input type="email" autocomplete="email" name="email" placeholder="Email *" required>
+                              </div>
+                              <div class="callback__form-checkbox">
+                                 <input type="checkbox" id="agreement">
+                                 <label for="agreement">
+                                    Я соглашаюсь на обработку, сбор, хранение и передачу третьим лицам предоставленной
+                                    мной
+                                    информации согласно <a href="">Политике конфиденциальности</a>.
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="checkout__buttons">
+                              <button type="button" class="white-button checkout-prev disabled">Назад</button>
+                              <button type="button" class="green-button checkout-next">Далee</button>
+                           </div>
+                        </div>
+                        <div class="checkout__step step-2" data-step="2">
+                           <div class="checkout__step-item">
+                              <p class="checkout__step-title">Дата доставки</p>
+                              <div class="checkout__row">
+                                 <div class="checkout__item checkout__item-date">
+                                    <input type="text" class="datepicker" id="checkoutDate" placeholder="дд.мм.гггг"
+                                       required>
+                                    <img src="img/icons/calendar.svg" alt="calendar-icon" class="custom-date-icon">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="checkout__step-item">
+                              <p class="checkout__step-title">Способ доставки</p>
+                              <div class="checkout__row">
+                                 <div class="checkout__item">
+                                    <div class="checkout__radio">
+                                       <label class="radio-label">
+                                          <input type="radio" name="delivery" class="courier-delivery" value="" checked>
+                                          Доставка курьером
+                                          <p class="checkmark"></p>
+                                       </label>
+                                    </div>
+                                    <div class="checkout__radio">
+                                       <label class="radio-label pvz-delivery">
+                                          <input type="radio" name="delivery" class="pvz-delivery" value="">
+                                          <p>Заберу в магазине на ул. Стремянная, 13 <span>(круглосуточно)</span></p>
+                                          <p class="checkmark"></p>
+                                       </label>
+                                    </div>
+                                    <div class="checkout__radio">
+                                       <label class="radio-label">
+                                          <input type="radio" name="delivery" class="pvz-delivery" value="">
+                                          <p>Заберу в магазине на пр. Энгельса, 96 <span>(08:00 - 21:00)</span></p>
+                                          <p class="checkmark"></p>
+                                       </label>
+                                    </div>
+                                    <div class="checkout__radio">
+                                       <label class="radio-label">
+                                          <input type="radio" name="delivery" class=" pvz-delivery" value="">
+                                          <p>Заберу в магазине на ул. Варшавская, 29к1 <span>(08:00 - 21:00)</span></p>
+                                          <p class="checkmark"></p>
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="checkout__step-item checkout__dynamic">
+                              <p class="checkout__step-title">Адрес доставки</p>
+                              <div class="checkout__row">
+                                 <div class="checkout__item">
+                                    <div class="checkbox">
+                                       <input type="checkbox" id="recipient" name="address">
+                                       <label for="recipient">
+                                          Уточнить адрес у получателя
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="checkout__row checkout__row-sm">
+                                 <div class="checkout__item">
+                                    <input type="text" id="address_city" placeholder="Введите адрес с номером дома"
+                                       required>
+                                    <span class="address__valid" style="display: none;">
+                                       <svg>
+                                          <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                       </svg>
+                                    </span>
+                                    <span class="address__invalid" style="display: none;">
+                                       <svg>
+                                          <use xlink:href="img/icons/icons.svg#close"></use>
+                                       </svg>
+                                    </span>
+                                    <div class="checkout__att">
+                                       <div class="checkout__att-icon">
+                                          <img src="img/icons/question.svg" alt="">
+                                       </div>
+                                       <div class="checkout__att-text">
+                                          Введите адрес и выберите из выпадающего списка
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="checkout__item">
+                                    <input type="text" placeholder="Квартира/Офис">
+                                 </div>
+                                 <div class="checkout__item">
+                                    <div class="checkbox">
+                                       <input type="checkbox" id="recipient-no">
+                                       <label for="recipient-no">
+                                          Нет номера квартиры
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="checkout__row checkout__row-big">
+                                 <div class="checkout__item">
+                                    <textarea placeholder="Комментарий к заказу"></textarea>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="checkout__step-item">
+                              <p class="checkout__step-title">Время доставки</p>
+                              <div class="checkout__row">
+                                 <div class="checkout__item">
+                                    <div class="checkout__radio">
+                                       <label class="radio-label">
+                                          <input type="radio" name="delivery-time" value="" checked>
+                                          <p>
+                                             Доставка в интервале 4 часа (300 ₽)
+                                             <span>Курьер привезет заказ в выбранном интервале</span>
+                                          </p>
+                                          <p class="checkmark"></p>
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="checkout__row">
+                                 <div class="checkout__item">
+                                    <div class="s-dropdown">
+                                       <p class="dropdown__button"><span>с 12:00 до 16:00</span>
+                                          <svg>
+                                             <use xlink:href="img/icons/icons.svg#chevron"></use>
+                                          </svg>
+                                       </p>
+                                       <ul class="dropdown__list">
+                                          <li class="dropdown__list-item" data-value="12-16">с 08:00 до 12:00</li>
+                                          <li class="dropdown__list-item" data-value="12-16">с 12:00 до 16:00</li>
+                                          <li class="dropdown__list-item" data-value="12-16">с 16:00 до 20:00</li>
+                                       </ul>
+                                       <input type="text" class="dropdown__input-hidden" value="">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="checkout__row checkout__dynamic">
+                                 <div class="checkout__item">
+                                    <div class="checkout__radio">
+                                       <label class="radio-label">
+                                          <input type="radio" name="delivery-time" value="">
+                                          Сокращенный интервал (500 ₽)
+                                          <p class="checkmark"></p>
+                                       </label>
+                                    </div>
+                                    <div class="checkout__radio">
+                                       <label class="radio-label">
+                                          <input type="radio" name="delivery-time" value="">
+                                          Доставка к точному часу (600 ₽)
+                                          <p class="checkmark"></p>
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="checkout__step-item checkout__dynamic">
+                              <p class="checkout__step-title">Получатель</p>
+                              <div class="checkout__row">
+                                 <div class="checkout__item">
+                                    <div class="checkbox">
+                                       <input type="checkbox" id="recipient-other">
+                                       <label for="recipient-other">
+                                          Получатель другой человек
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="checkout__row" id="recipient-other-block">
+                                 <div class="checkout__item">
+                                    <input type="text" autocomplete="name" placeholder="Имя *" required>
+                                 </div>
+                                 <div class="checkout__item">
+                                    <input type="text" class="tel-mask" autocomplete="tel"
+                                       placeholder="Номер телефона *" required>
+                                 </div>
+                              </div>
+                              <div class="checkout__row">
+                                 <div class="checkout__item">
+                                    <div class="checkbox">
+                                       <input type="checkbox" id="recipient-anon">
+                                       <label for="recipient-anon">
+                                          Анонимная доставка
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="checkout__buttons">
+                              <button type="button" class="white-button checkout-prev">Назад</button>
+                              <button type="button" class="green-button checkout-next">Далee</button>
+                           </div>
+                        </div>
+                        <div class="checkout__step step-3" data-step="3">
+                           <div class="checkout__row">
+                              <div class="checkout__package">
+                                 <div class="checkout__package-view">
+                                    <div class="checkout__package-img">
+                                       <img src="img/products/1.png" alt="">
+                                    </div>
+                                    <div class="checkout__package-name">
+                                       Букет из 51 белой пионовидной розы Titanium 40 см
+                                    </div>
+                                 </div>
+                                 <div class="checkout__package-settings">
+                                    <div class="checkout__radio">
+                                       <label class="radio-label">
+                                          <input type="radio" name="package" value="" checked>
+                                          Без упаковки
+                                          <p class="checkmark"></p>
+                                       </label>
+                                    </div>
+                                    <div class="checkout__radio">
+                                       <label class="radio-label">
+                                          <input type="radio" name="package" value="">
+                                          Атласная лента (90 ₽)
+                                          <p class="checkmark"></p>
+                                       </label>
+                                    </div>
+                                    <div class="checkout__radio">
+                                       <label class="radio-label">
+                                          <input type="radio" name="package" value="">
+                                          <p>
+                                             Упаковка как на фото (170 ₽)
+                                             <span>
+                                                Рисунок или цвет упаковки могут незначительно отличаться с сохранением
+                                                общего цветового
+                                                восприятия.
+                                             </span>
+                                          </p>
+                                          <p class="checkmark"></p>
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="checkout__package">
+                                 <div class="checkout__package-view">
+                                    <div class="checkout__package-img">
+                                       <img src="img/products/2.png" alt="">
+                                    </div>
+                                    <div class="checkout__package-name">
+                                       Букет из 15 розовых гипсофил
+                                    </div>
+                                 </div>
+                                 <div class="checkout__package-settings">
+                                    <div class="checkout__radio">
+                                       <label class="radio-label">
+                                          <input type="radio" name="package2" value="" checked>
+                                          Без упаковки
+                                          <p class="checkmark"></p>
+                                       </label>
+                                    </div>
+                                    <div class="checkout__radio">
+                                       <label class="radio-label">
+                                          <input type="radio" name="package2" value="">
+                                          Атласная лента (90 ₽)
+                                          <p class="checkmark"></p>
+                                       </label>
+                                    </div>
+                                    <div class="checkout__radio">
+                                       <label class="radio-label">
+                                          <input type="radio" name="package2" value="">
+                                          <p>
+                                             Упаковка как на фото (170 ₽)
+                                             <span>
+                                                Рисунок или цвет упаковки могут незначительно отличаться с сохранением
+                                                общего цветового
+                                                восприятия.
+                                             </span>
+                                          </p>
+                                          <p class="checkmark"></p>
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="checkout__row">
+                              <div class="checkout__package">
+                                 <div class="checkout__package-view">
+                                    <div class="checkout__package-img">
+                                       <img src="img/products/3.png" alt="">
+                                    </div>
+                                    <div class="checkout__package-name">
+                                       Букет из 51 белой, оранжевой и желтой розы 35-40 см (Россия)
+                                    </div>
+                                 </div>
+                                 <div class="checkout__package-settings">
+                                    <div class="checkout__radio">
+                                       <label class="radio-label">
+                                          <input type="radio" name="package3" value="" checked>
+                                          Без упаковки
+                                          <p class="checkmark"></p>
+                                       </label>
+                                    </div>
+                                    <div class="checkout__radio">
+                                       <label class="radio-label">
+                                          <input type="radio" name="package3" value="">
+                                          Атласная лента (90 ₽)
+                                          <p class="checkmark"></p>
+                                       </label>
+                                    </div>
+                                    <div class="checkout__radio">
+                                       <label class="radio-label">
+                                          <input type="radio" name="package3" value="">
+                                          <p>
+                                             Упаковка как на фото (170 ₽)
+                                             <span>
+                                                Рисунок или цвет упаковки могут незначительно отличаться с сохранением
+                                                общего цветового
+                                                восприятия.
+                                             </span>
+                                          </p>
+                                          <p class="checkmark"></p>
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="checkout__buttons">
+                              <button type="button" class="white-button checkout-prev">Назад</button>
+                              <button type="button" class="green-button checkout-next">Далee</button>
+                           </div>
+                        </div>
+                        <div class="checkout__step step-4" data-step="4">
+                           <div class="checkout__pay">
+                              <div class="checkout__radio">
+                                 <label class="radio-label">
+                                    <input type="radio" name="pay-method" value="" checked>
+                                    Оплата в магазине: карта/наличные
+                                    <p class="checkmark"></p>
+                                 </label>
+                              </div>
+                              <div class="checkout__radio">
+                                 <label class="radio-label">
+                                    <input type="radio" name="pay-method" value="">
+                                    Оплата онлайн: карта/СБП
+                                    <p class="checkmark"></p>
+                                 </label>
+                              </div>
+                              <div class="checkout__radio">
+                                 <label class="radio-label">
+                                    <input type="radio" name="pay-method" value="">
+                                    Оплата Долями
+                                    <p class="checkmark"></p>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="checkout__buttons">
+                              <button type="button" class="white-button checkout-prev">Назад</button>
+                              <button type="button" class="green-button checkout-next">Далee</button>
+                           </div>
+                        </div>
+                        <div class="checkout__step step-5" data-step="5">
+                           <div class="checkout__more-products">
+                              <div class="quantity-carousel quantity-carousel-m">
+                                 <div class="quantity-carousel__title">Сделайте ваш подарок эффектнее</div>
+                                 <div class="quantity-carousel__slider quantity-carousel__slider-m swiper">
+                                    <div class="quantity-carousel__wrapper swiper-wrapper">
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/1.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Шар сатин Звезда Краски С Днем
+                                                   Рождения с гелием</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/2.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Шар сатин Сердце красный с
+                                                   гелием</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price discount-price">
+                                                      <div class="price-procente">-5%</div>
+                                                      <div class="product-preview__buy-prices">
+                                                         <span class="actual-price">990 ₽</span>
+                                                         <span class="old-price">1 190 ₽</span>
+                                                      </div>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/1.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Шар сатин Звезда Краски С Днем
+                                                   Рождения с гелием</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/2.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Шар сатин Сердце красный с
+                                                   гелием</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price discount-price">
+                                                      <div class="price-procente">-5%</div>
+                                                      <div class="product-preview__buy-prices">
+                                                         <span class="actual-price">990 ₽</span>
+                                                         <span class="old-price">1 190 ₽</span>
+                                                      </div>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/1.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Шар сатин Звезда Краски С Днем
+                                                   Рождения с гелием</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/2.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Шар сатин Сердце красный с
+                                                   гелием</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price discount-price">
+                                                      <div class="price-procente">-5%</div>
+                                                      <div class="product-preview__buy-prices">
+                                                         <span class="actual-price">990 ₽</span>
+                                                         <span class="old-price">1 190 ₽</span>
+                                                      </div>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="quantity-carousel__slide-prev slider-button-prev">
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="quantity-carousel__slide-next slider-button-next">
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <div class="quantity-carousel quantity-carousel-m">
+                                 <div class="quantity-carousel__title">Добавьте милоты</div>
+                                 <div class="quantity-carousel__slider quantity-carousel__slider-m swiper">
+                                    <div class="quantity-carousel__wrapper swiper-wrapper">
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/3.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Медведь 65 см Молочный</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/4.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Медведь 230 см Молочный</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">16 900 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/3.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Медведь 65 см Молочный</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/4.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Медведь 230 см Молочный</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">16 900 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/3.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Медведь 65 см Молочный</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/4.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Медведь 230 см Молочный</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">16 900 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="quantity-carousel__slide-prev slider-button-prev">
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="quantity-carousel__slide-next slider-button-next">
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <div class="quantity-carousel quantity-carousel-m">
+                                 <div class="quantity-carousel__title">Добавьте топпер</div>
+                                 <div class="quantity-carousel__slider quantity-carousel__slider-m swiper">
+                                    <div class="quantity-carousel__wrapper swiper-wrapper">
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/5.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Топпер Семицветик "Я люблю
+                                                   тебя"</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/6.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Топпер Семицветик "Спасибо"</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">16 900 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/5.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Топпер Семицветик "Я люблю
+                                                   тебя"</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/6.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Топпер Семицветик "Спасибо"</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">16 900 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/5.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Топпер Семицветик "Я люблю
+                                                   тебя"</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/6.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Топпер Семицветик "Спасибо"</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">16 900 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="quantity-carousel__slide-prev slider-button-prev">
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="quantity-carousel__slide-next slider-button-next">
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <div class="quantity-carousel quantity-carousel-m">
+                                 <div class="quantity-carousel__title">Сделайте вкуснее</div>
+                                 <div class="quantity-carousel__slider quantity-carousel__slider-m swiper">
+                                    <div class="quantity-carousel__wrapper swiper-wrapper">
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/7.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Шоколад набор Любимой маме 9*5
+                                                   гр.</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/8.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Конфеты Рафаэлло 150 гр.</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">16 900 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/7.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Шоколад набор Любимой маме 9*5
+                                                   гр.</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/8.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Конфеты Рафаэлло 150 гр.</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">16 900 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/7.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Шоколад набор Любимой маме 9*5
+                                                   гр.</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/8.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Конфеты Рафаэлло 150 гр.</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">16 900 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="quantity-carousel__slide-prev slider-button-prev">
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="quantity-carousel__slide-next slider-button-next">
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <div class="quantity-carousel quantity-carousel-m">
+                                 <div class="quantity-carousel__title">Напишите ей - она оценит</div>
+                                 <div class="quantity-carousel__slider quantity-carousel__slider-m swiper">
+                                    <div class="quantity-carousel__wrapper swiper-wrapper">
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/9.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Мини-открытка 8*8 "Любимой
+                                                   маме"</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/10.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Мини-открытка 8*8 "Поздравляю!"
+                                                   Тюльпаны в корзине</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">16 900 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/9.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Мини-открытка 8*8 "Любимой
+                                                   маме"</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/10.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Мини-открытка 8*8 "Поздравляю!"
+                                                   Тюльпаны в корзине</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">16 900 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/9.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Мини-открытка 8*8 "Любимой
+                                                   маме"</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/10.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Мини-открытка 8*8 "Поздравляю!"
+                                                   Тюльпаны в корзине</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">16 900 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="quantity-carousel__slide-prev slider-button-prev">
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="quantity-carousel__slide-next slider-button-next">
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <div class="quantity-carousel quantity-carousel-m">
+                                 <div class="quantity-carousel__title">Есть куда поставить?</div>
+                                 <div class="quantity-carousel__slider quantity-carousel__slider-m swiper">
+                                    <div class="quantity-carousel__wrapper swiper-wrapper">
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/11.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Ваза Лагиза 26 см</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/12.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Ваза Трубка 25 см</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">16 900 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/11.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Ваза Лагиза 26 см</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/12.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Ваза Трубка 25 см</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">16 900 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/11.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Ваза Лагиза 26 см</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/12.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Ваза Трубка 25 см</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">16 900 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="quantity-carousel__slide-prev slider-button-prev">
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="quantity-carousel__slide-next slider-button-next">
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <div class="quantity-carousel quantity-carousel-m">
+                                 <div class="quantity-carousel__title">Продлите жизнь букеты на 2-3 дня</div>
+                                 <div class="quantity-carousel__slider quantity-carousel__slider-m swiper">
+                                    <div class="quantity-carousel__wrapper swiper-wrapper">
+                                       <div class="quantity-carousel__slide swiper-slide">
+                                          <div class="product-preview">
+                                             <a href="" class="product-preview__image">
+                                                <img src="img/additions/13.png" alt="">
+                                             </a>
+                                             <div class="product-preview__info">
+                                                <a href="" class="product-preview__name">Набор подкормки для цветов
+                                                   Кризал 5 пакетов по 3,5 гр.</a>
+                                                <div class="product-preview__buy">
+                                                   <div class="product-preview__price">
+                                                      <span class="actual-price">430 ₽</span>
+                                                   </div>
+                                                   <button class="product-preview__add-cart"
+                                                      aria-label="Добавить в корзину">
+                                                      <svg class="product-preview__basket">
+                                                         <use xlink:href="img/icons/icons.svg#basket"></use>
+                                                      </svg>
+                                                      <svg class="product-preview__check">
+                                                         <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                                      </svg>
+                                                   </button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="quantity-carousel__slide-prev slider-button-prev">
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="quantity-carousel__slide-next slider-button-next">
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="checkout__buttons">
+                              <button type="button" class="white-button checkout-prev">Назад</button>
+                              <button type="submit" class="green-button checkout-next">Оформить</button>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+                  <div class="checkout__aside">
+                     <div class="checkout__total">
+                        <div class="checkout__total-delivery">
+                           <p>Самовывоз <span>0 ₽</span></p>
+                           <p>Доставка <span>от 300 ₽</span></p>
+                        </div>
+                        <div class="checkout__total-summ">
+                           <p>В корзине 3 товара</p>
+                           <p>Без скидки <span class="no-discount">23 330 ₽</span></p>
+                           <p>Скидка <span class="red">5 000 ₽</span></p>
+                           <p>Итого <span class="checkout__total-value">18 330 ₽</span></p>
+                        </div>
+                        <form class="checkout__total-promo">
+                           <input type="text" placeholder="Введите промокод">
+                           <button type="submit">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#arrow"></use>
+                              </svg>
+                           </button>
+                        </form>
+                     </div>
+                     <div class="checkout__aside-attention">
+                        <div class="checkout__aside-attention-icon">
+                           !
+                        </div>
+                        <p>Доступна оплата картой, наличными или Долями в рассрочку. Варианты оплаты будут предложены
+                           после оформления заказа.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+
+
+         <!-- Попапы -->
+         <div class="one-click__popup">
+            <div class="one-click__body">
+               <div class="one-click__title">
+                  Заказ в 1 клик
+               </div>
+               <form method="" action="" class="callback__form">
+                  <div class="callback__form-product">Букет из 51 белой пионовидной розы Titanium 40 см</div>
+                  <div class="callback__form-item">
+                     <div class="quantity-input">
+                        <div class="quantity-input-left">
+                           <span class="quantity-input-remove"><img src="img/icons/remove.svg" alt=""></span>
+                           <span class="quantity-input-minus"><img src="img/icons/minus.svg" alt=""></span>
+                        </div>
+                        <input type="number" value="1">
+                        <div class="quantity-input-right">
+                           <span class="quantity-input-plus"><img src="img/icons/plus.svg" alt=""></span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="callback__form-item">
+                     <input type="text" autocomplete="name" placeholder="Имя *" required>
+                  </div>
+                  <div class="callback__form-item">
+                     <input type="tel" autocomplete="tel" class="tel-mask" placeholder="+7 (___) ___-__-__ *" required>
+                  </div>
+                  <p class="callback__form-att">* - обязательные поля для заполнения</p>
+                  <div class="callback__form-checkbox">
+                     <input type="checkbox" id="policy-checkbox2">
+                     <label for="policy-checkbox2">
+                        Я соглашаюсь на обработку, сбор, хранение и передачу третьим лицам предоставленной мной
+                        информации согласно <a href="">Политике конфиденциальности</a>.
+                     </label>
+                  </div>
+                  <button type="submit" class="green-button">Заказать в 1 клик</button>
+               </form>
+               <div class="one-click__close">
+                  <svg>
+                     <use xlink:href="img/icons/icons.svg#close"></use>
+                  </svg>
+               </div>
+               <!-- Сообщение после отправки -->
+               <!-- <div class="one-click__thanks">
+                  <div class="one-click__thanks-title">
+                     Спасибо!
+                  </div>
+                  <div class="one-click__thanks-subtitle">
+                     Вам перезвонит первый освободившийся оператор.
+                  </div>
+                  <div class="one-click__thanks-image">
+                     <img src="img/thanks-img.png" alt="">
+                  </div>
+                  <div class="one-click__thanks-descr">
+                     Пока вы ожидаете звонка, ознакомьтесь
+                     с нашими специальными предложениями.
+                  </div>
+                  <a href="" class="green-button">Акции</a>
+               </div> -->
+            </div>
+
+         </div>
+         <div class="new-testimonial__popup">
+            <div class="new-testimonial__body">
+               <div class="new-testimonial__title">
+                  Оставьте отзыв
+               </div>
+               <form method="" action="" class="new-testimonial__form">
+                  <div class="new-testimonial__avatar">
+                     <input type="file" id="upload-author-image" accept="image/*" multiple>
+                     <label for="upload-author-image"></label>
+                     <div id="preview-author-image"></div>
+                  </div>
+                  <div class="new-testimonial__rating">
+                     <p>Ваша оценка</p>
+                     <div class="rating-add">
+                        <input type="radio" name="star" id="star5" value="5">
+                        <label for="star5">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                              class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path
+                                 d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                           </svg>
+                        </label>
+
+                        <input type="radio" name="star" id="star4" value="4">
+                        <label for="star4">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                              class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path
+                                 d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                           </svg>
+                        </label>
+
+                        <input type="radio" name="star" id="star3" value="3">
+                        <label for="star3">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                              class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path
+                                 d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                           </svg>
+                        </label>
+
+                        <input type="radio" name="star" id="star2" value="2">
+                        <label for="star2">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                              class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path
+                                 d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                           </svg>
+                        </label>
+
+                        <input type="radio" name="star" id="star1" value="1">
+                        <label for="star1">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                              class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path
+                                 d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                           </svg>
+                        </label>
+                     </div>
+                  </div>
+                  <div class="new-testimonial__form-item">
+                     <input type="text" placeholder="Имя *">
+                  </div>
+                  <div class="new-testimonial__form-item">
+                     <textarea placeholder="Расскажите о товаре *"></textarea>
+                  </div>
+                  <div class="new-testimonial__images">
+                     <p>Загрузите фотографии с букетом</p>
+                     <div class="upload-testimonial-images">
+                        <input type="file" id="upload-images" accept="image/*" multiple>
+                        <label for="upload-images"></label>
+                        <div id="preview-images"></div>
+                     </div>
+                  </div>
+                  <p class="callback__form-att">* - обязательные поля для заполнения</p>
+                  <button type="submit" class="green-button">Создать отзыв</button>
+                  <div class="callback__form-checkbox">
+                     <input type="checkbox" id="policy-checkbox3">
+                     <label for="policy-checkbox3">
+                        Я соглашаюсь на обработку, сбор, хранение и передачу третьим лицам предоставленной мной
+                        информации согласно <a href="">Политике конфиденциальности</a>.
+                     </label>
+                  </div>
+               </form>
+               <div class="new-testimonial__close">
+                  <img src="img/icons/close-thin.svg" alt="">
+               </div>
+               <!-- Сообщение после отправки -->
+               <!-- <div class="one-click__thanks">
+                  <div class="one-click__thanks-title">
+                     Спасибо!
+                  </div>
+                  <div class="one-click__thanks-subtitle">
+                     Ваш отзыв принят
+                  </div>
+                  <div class="one-click__thanks-image">
+                     <img src="img/thanks-img.png" alt="">
+                  </div>
+                  <div class="one-click__thanks-descr">
+                     Специальные предложениями
+                  </div>
+                  <a href="" class="green-button">Акции</a>
+               </div> -->
+            </div>
+         </div>
+
+
+         <!-- Сообщения -->
+         <div class="add-to-cart-message">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+               <path
+                  d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+            </svg>
+            Товар добавлен в <a href="">Корзину</a>
+         </div>
+         <div class="add-to-wishlist-message">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+               <path
+                  d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+            </svg>
+            Товар добавлен в <a href="">Избранное</a>
+         </div>
+      </main>
+      <footer style="background: rgb(244, 244, 244); padding-bottom: 50px;">
+   <p style="text-align: center;padding: 30px 0;">FOOTER</p>
+</footer>
+
+      <!--Корзина-->
+      <div class="cart-popup">
+         <div class="cart-popup__content">
+            <div class="cart-popup__body">
+               <div class="cart-popup__title">Корзина</div>
+               <div class="cart-popup__products">
+                  <div class="cart-popup__product cart-product">
+                     <div class="cart-product__image">
+                        <img src="img/products/1.png" alt="">
+                     </div>
+                     <div class="cart-product__info">
+                        <p class="cart-product__name">Букет из 51 белой пионовидной розы Titanium 40 см</p>
+                        <div class="product-preview__price discount-price">
+                           <div class="price-procente">-25%</div>
+                           <span class="actual-price">263 790 ₽</span>
+                           <span class="old-price">363 790 ₽</span>
+                        </div>
+                        <div class="quantity-input">
+                           <div class="quantity-input-left">
+                              <span class="quantity-input-remove"><img src="img/icons/remove.svg" alt=""></span>
+                              <span class="quantity-input-minus"><img src="img/icons/minus.svg" alt=""></span>
+                           </div>
+                           <input type="number" value="1">
+                           <div class="quantity-input-right">
+                              <span class="quantity-input-plus"><img src="img/icons/plus.svg" alt=""></span>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="cart-popup__product cart-product">
+                     <div class="cart-product__image">
+                        <img src="img/products/sert.png" alt="">
+                     </div>
+                     <div class="cart-product__info">
+                        <p class="cart-product__name">Топпер Семицветик "Я люблю тебя"</p>
+                        <div class="product-preview__price">
+                           <span class="actual-price">200 ₽</span>
+                        </div>
+                        <div class="quantity-input">
+                           <div class="quantity-input-left">
+                              <span class="quantity-input-remove"><img src="img/icons/remove.svg" alt=""></span>
+                              <span class="quantity-input-minus"><img src="img/icons/minus.svg" alt=""></span>
+                           </div>
+                           <input type="number" value="1">
+                           <div class="quantity-input-right">
+                              <span class="quantity-input-plus"><img src="img/icons/plus.svg" alt=""></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="cart-popup__complement">
+                  <p class="cart-popup__subtitle">Комплект</p>
+                  <div class="cart-popup__product cart-product">
+                     <div class="cart-product__image">
+                        <img src="img/products/1.png" alt="">
+                     </div>
+                     <div class="cart-product__info">
+                        <p class="cart-product__name">Топпер Семицветик "Я люблю тебя"</p>
+                        <div class="product-preview__price">
+                           <span class="actual-price">4 090 ₽</span>
+                        </div>
+                        <div class="quantity-input">
+                           <div class="quantity-input-left">
+                              <span class="quantity-input-remove"><img src="img/icons/remove.svg" alt=""></span>
+                              <span class="quantity-input-minus"><img src="img/icons/minus.svg" alt=""></span>
+                           </div>
+                           <input type="number" value="1">
+                           <div class="quantity-input-right">
+                              <span class="quantity-input-plus"><img src="img/icons/plus.svg" alt=""></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <span class="cart-popup__sign">+</span>
+                  <div class="cart-popup__product cart-product">
+                     <div class="cart-product__image">
+                        <img src="img/products/sert.png" alt="">
+                     </div>
+                     <div class="cart-product__info">
+                        <p class="cart-product__name">Топпер Семицветик "Я люблю тебя"</p>
+                        <div class="product-preview__price">
+                           <span class="actual-price">200 ₽</span>
+                        </div>
+                        <div class="quantity-input">
+                           <div class="quantity-input-left">
+                              <span class="quantity-input-remove"><img src="img/icons/remove.svg" alt=""></span>
+                              <span class="quantity-input-minus"><img src="img/icons/minus.svg" alt=""></span>
+                           </div>
+                           <input type="number" value="1">
+                           <div class="quantity-input-right">
+                              <span class="quantity-input-plus"><img src="img/icons/plus.svg" alt=""></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <span class="cart-popup__sign">=</span>
+                  <div class="product-preview__price discount-price">
+                     <div class="price-procente">-25%</div>
+                     <span class="actual-price">263 790 ₽</span>
+                     <span class="old-price">363 790 ₽</span>
+                  </div>
+               </div>
+            </div>
+            <div class="cart-popup__advice">
+               <section class="quantity-carousel quantity-carousel-xl">
+                  <div class="quantity-carousel__body container">
+                     <div class="quantity-carousel__title">Советуем так же</div>
+                     <div class="cart-carousel__slider quantity-carousel__slider-cart swiper">
+                        <div class="quantity-carousel__wrapper swiper-wrapper">
+                           <div class="quantity-carousel__slide swiper-slide">
+                              <div class="product-preview">
+                                 <a href="" class="product-preview__image">
+                                    <img src="img/products/1.png" alt="">
+                                 </a>
+                                 <div class="product-preview__info">
+                                    <a href="" class="product-preview__name">Топпер Семицветик "Я люблю тебя"</a>
+                                    <div class="product-preview__buy">
+                                       <div class="product-preview__price">
+                                          <span class="actual-price">200 ₽</span>
+                                       </div>
+                                       <button class="product-preview__add-cart" aria-label="Добавить в корзину">
+                                          <svg class="product-preview__basket">
+                                             <use xlink:href="img/icons/icons.svg#basket"></use>
+                                          </svg>
+                                          <svg class="product-preview__check">
+                                             <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                          </svg>
+                                       </button>
+                                       <button class="product-preview__add-wishlist" aria-label="Добавить в избранное">
+                                          <svg class="product-preview__heart">
+                                             <use xlink:href="img/icons/icons.svg#heart"></use>
+                                          </svg>
+                                          <svg class="product-preview__heart-fill">
+                                             <use xlink:href="img/icons/icons.svg#heart-fill"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="quantity-carousel__slide swiper-slide">
+                              <div class="product-preview">
+                                 <a href="" class="product-preview__image">
+                                    <img src="img/products/2.png" alt="">
+                                 </a>
+                                 <div class="product-preview__info">
+                                    <a href="" class="product-preview__name">Ваза Трубка 25см</a>
+                                    <div class="product-preview__buy">
+                                       <div class="product-preview__price discount-price">
+                                          <div class="price-procente">-5%</div>
+                                          <div class="product-preview__buy-prices">
+                                             <span class="actual-price">990 ₽</span>
+                                             <span class="old-price">1 190 ₽</span>
+                                          </div>
+                                       </div>
+                                       <button class="product-preview__add-cart" aria-label="Добавить в корзину">
+                                          <svg class="product-preview__basket">
+                                             <use xlink:href="img/icons/icons.svg#basket"></use>
+                                          </svg>
+                                          <svg class="product-preview__check">
+                                             <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                          </svg>
+                                       </button>
+                                       <button class="product-preview__add-wishlist" aria-label="Добавить в избранное">
+                                          <svg class="product-preview__heart">
+                                             <use xlink:href="img/icons/icons.svg#heart"></use>
+                                          </svg>
+                                          <svg class="product-preview__heart-fill">
+                                             <use xlink:href="img/icons/icons.svg#heart-fill"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="quantity-carousel__slide swiper-slide">
+                              <div class="product-preview">
+                                 <a href="" class="product-preview__image">
+                                    <img src="img/products/1.png" alt="">
+                                 </a>
+                                 <div class="product-preview__info">
+                                    <a href="" class="product-preview__name">Топпер Семицветик "Я люблю тебя"</a>
+                                    <div class="product-preview__buy">
+                                       <div class="product-preview__price discount-price">
+                                          <div class="price-procente">-25%</div>
+                                          <div class="product-preview__buy-prices">
+                                             <span class="actual-price">200 ₽</span>
+                                             <span class="old-price">14 900 ₽</span>
+                                          </div>
+                                       </div>
+                                       <button class="product-preview__add-cart" aria-label="Добавить в корзину">
+                                          <svg class="product-preview__basket">
+                                             <use xlink:href="img/icons/icons.svg#basket"></use>
+                                          </svg>
+                                          <svg class="product-preview__check">
+                                             <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                          </svg>
+                                       </button>
+                                       <button class="product-preview__add-wishlist" aria-label="Добавить в избранное">
+                                          <svg class="product-preview__heart">
+                                             <use xlink:href="img/icons/icons.svg#heart"></use>
+                                          </svg>
+                                          <svg class="product-preview__heart-fill">
+                                             <use xlink:href="img/icons/icons.svg#heart-fill"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="quantity-carousel__slide swiper-slide">
+                              <div class="product-preview">
+                                 <a href="" class="product-preview__image">
+                                    <img src="img/products/2.png" alt="">
+                                 </a>
+                                 <div class="product-preview__info">
+                                    <a href="" class="product-preview__name">Ваза Трубка 25см</a>
+                                    <div class="product-preview__buy">
+                                       <div class="product-preview__price discount-price">
+                                          <div class="price-procente">-5%</div>
+                                          <div class="product-preview__buy-prices">
+                                             <span class="actual-price">990 ₽</span>
+                                             <span class="old-price">1 190 ₽</span>
+                                          </div>
+                                       </div>
+                                       <button class="product-preview__add-cart" aria-label="Добавить в корзину">
+                                          <svg class="product-preview__basket">
+                                             <use xlink:href="img/icons/icons.svg#basket"></use>
+                                          </svg>
+                                          <svg class="product-preview__check">
+                                             <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                          </svg>
+                                       </button>
+                                       <button class="product-preview__add-wishlist" aria-label="Добавить в избранное">
+                                          <svg class="product-preview__heart">
+                                             <use xlink:href="img/icons/icons.svg#heart"></use>
+                                          </svg>
+                                          <svg class="product-preview__heart-fill">
+                                             <use xlink:href="img/icons/icons.svg#heart-fill"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="cart-carousel__slide-prev slider-button-prev">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#arrow"></use>
+                        </svg>
+                     </div>
+                     <div class="cart-carousel__slide-next slider-button-next">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#arrow"></use>
+                        </svg>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="cart-popup__total">
+               <p>В корзине 3 товара</p>
+               <p>Итого <span>18 330 ₽</span></p>
+
+               <div class="cart-popup__order">
+                  <a href="" class="green-button">Оформить заказ</a>
+               </div>
+            </div>
+            <button class="cart-popup__close" aria-label="Закрыть корзину">
+               <img src="img/icons/close-thin.svg" alt="">
+            </button>
+         </div>
+      </div>
+      <!--моб меню-->
+      <div class="mobile-menu">
+         <a href="" class="mobile-menu__item active">
+            <img src="img/icons/home.svg" alt="">
+            <span>Главная</span>
+         </a>
+         <a href="" class="mobile-menu__item">
+            <img src="img/icons/grid.svg" alt="">
+            <span>Каталог</span>
+         </a>
+         <a href="" class="mobile-menu__item">
+            <img src="img/icons/cart.svg" alt="">
+            <span>Корзина</span>
+            <span class="cart-quantity">1</span>
+         </a>
+         <a href="" class="mobile-menu__item">
+            <img src="img/icons/search.svg" alt="">
+            <span>Поиск</span>
+         </a>
+         <a href="" class="mobile-menu__item">
+            <img src="img/icons/user-1.svg" alt="">
+            <span>Профиль</span>
+         </a>
+      </div>
+      </div>
+      <script src="js/air-datepicker.min.js"></script>
+      <script src="https://unpkg.com/imask"></script>
+      <script src="js/lightgallery.min.js"></script>
+      <script src="js/lg-thumbnail.min.js"></script>
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/app.js"></script>
+</body>
+
+</html>

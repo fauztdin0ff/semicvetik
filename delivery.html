@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <script src="js/ahunter_suggest.js"></script>
+   <link rel="stylesheet" href="css/air-datepicker.min.css">
+   <link rel="stylesheet" href="css/lightgallery.css">
+   <link rel="stylesheet" href="css/lg-thumbnail.css">
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>Главная</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header style="background: rgb(98, 194, 63);">
+   <div class="header__body" style=" display: flex;justify-content: space-between;">
+      <div style="padding: 20px;display: flex;flex-wrap: wrap;gap: 10px;">
+         <a href="catalog.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Каталог</a>
+         <a href="product.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Страница товара</a>
+         <a href="checkout.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Оформить заказ</a>
+         <a href="delivery.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Доставка</a>
+         <a href="cabinet.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Кабинет</a>
+         <a href="about.html" style="color: #fff;font-size: 12px;text-decoration: underline;">О нас</a>
+         <a href="blog.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Блог</a>
+         <a href="article.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Статья блога</a>
+         <a href="reviews.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Отзывы</a>
+         <a href="thanks.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Благодарности</a>
+         <a href="employees.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Сотрудники</a>
+         <a href="vacancies.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Вакансии</a>
+         <a href="vacancy.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Вакансия</a>
+         <a href="franchise.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Франшиза</a>
+         <a href="login.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Войти</a>
+         <button class="open-cart-btn" style="color: #fff;font-size: 12px;text-decoration: underline;">Корзина</button>
+         <a href="return-policy.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Политика
+            возврата</a>
+         <a href="public-offer.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Публичная
+            оферта</a>
+         <a href="privacy-policy.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Политика
+            конфиденциальности</a>
+         <a href="personal-data.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Согласие на
+            обработку персональных данных</a>
+         <a href="cookies.html" style="color: #fff;font-size: 12px;text-decoration: underline;">Согласие на сбор и
+            обработку файлов cookie</a>
+      </div>
+   </div>
+</header>
+      <main>
+         <section class="delivery">
+            <div class="delivery__body container">
+               <div class="delivery__calculator calculator">
+                  <h2 class="calculator__title">Калькулятор доставки</h2>
+                  <div class="calculator__subtitle">по Санкт-Петербургу и Ленинградской области</div>
+                  <div class="calculator__form">
+                     <div class="calculator__area">
+                        <input type="text" id="address-full" placeholder="Адрес доставки" required="">
+                     </div>
+                     <div class="calculator__area">
+                        <div class="date-area">
+                           <input type="text" class="datepicker" placeholder="Дата доставки">
+                           <img src="img/icons/calendar.svg" alt="calendar-icon" class="custom-date-icon">
+                        </div>
+                     </div>
+                     <div class="calculator__area">
+                        <div class="s-dropdown">
+                           <p class="dropdown__button"><span>Время доставки</span>
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#chevron-thin"></use>
+                              </svg>
+                           </p>
+                           <ul class="dropdown__list">
+                              <li class="dropdown__list-item" data-value="12-16">с 08:00 до 12:00</li>
+                              <li class="dropdown__list-item" data-value="12-16">с 12:00 до 16:00</li>
+                              <li class="dropdown__list-item" data-value="12-16">с 16:00 до 20:00</li>
+                           </ul>
+                           <input type="text" class="dropdown__input-hidden" value="">
+                        </div>
+                     </div>
+                     <div class="calculator__area">
+                        <div class="calculator__radio">
+                           <label class="radio-label">
+                              <input type="radio" name="delivery-time" value="">
+                              День (с 06:00 до 23:00)
+                              <span class="checkmark"></span>
+                           </label>
+                        </div>
+                        <div class="calculator__radio">
+                           <label class="radio-label">
+                              <input type="radio" name="delivery-time" value="">
+                              Ночь (с 23:00 до 06:00)
+                              <span class="checkmark"></span>
+                           </label>
+                        </div>
+                     </div>
+                     <button type="button" class="green-button">Рассчитать</button>
+                  </div>
+               </div>
+               <div class="delivery__descriptions theme-text">
+                  <div class="delivery__descriptions-col">
+                     <div>
+                        <h3>Самовывоз</h3>
+                        <p>Вы можете самостоятельно забрать букет из наших салонов в любое удобное для Вас время в г.
+                           Санкт-Петербург по адресам:</p>
+                        <div class="d-flex">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#location"></use>
+                           </svg>
+                           <p><b>ул. Стремянная, 13</b> (4 минуты от метро Маяковская);</p>
+                        </div>
+                        <div class="d-flex">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#location"></use>
+                           </svg>
+                           <p><b>пр. Энгельса, 96</b> (16 минут от метро Удельная);</p>
+                        </div>
+                        <div class="d-flex">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#location"></use>
+                           </svg>
+                           <p><b>ул. Варшавская, 29к1</b> (9 минут от метро Парк Победы).</p>
+                        </div>
+                        <p>
+                           Предварительно необходимо оформить заказ на сайте или по телефону, и назвать его номер при
+                           получении в нашем салоне. Это
+                           гарантирует, что нужные цветы в нужном количестве будут зарезервированы специально для вас.
+                        </p>
+                        <p>Ознакомиться со схемой проезда к нам можно в разделе <a href="">Контакты</a>.</p>
+                     </div>
+                     <br>
+                     <br>
+                     <div>
+                        <h3>Доставка по Санкт-Петербургу</h3>
+                        <p>
+                           Интернет-магазин цветов «Семицветик» осуществляет доставку букетов Ленинградской области 7
+                           дней в неделю 24 часа в
+                           сутки!
+                        </p>
+                        <p>
+                           Доставка производится только после подтверждения заказа менеджером. Если Вы не знаете адрес
+                           получателя, достаточно
+                           указать его имя и телефон. Мы позвоним получателю и договоримся о времени и месте встречи для
+                           вручения букета!
+                        </p>
+                        <p><b>В интервале 4 часов – 300 рублей.</b></p>
+                        <p><b>В интервале менее 4 часов – 500 рублей.</b></p>
+                        <p><b>К точному часу – 600 рублей.</b></p>
+                        <p class="text-small">
+                           (Скорость
+                           доставки зависит от загруженности курьерской службы, подробности просим уточнять у оператора)
+                        </p>
+
+                        <p class="color-grey text-small">
+                           * Допускается техническое опоздание курьера до 15 минут. В случае серьезного опоздания
+                           покупателю гарантируется возврат
+                           стоимости доставки.
+                        </p>
+
+                        <p class="color-grey text-small">* На крупногабаритные товары, требующие спецтранспорта доставка
+                           считается
+                           отдельно.</p>
+
+                        <p class="color-grey text-small">* Возможность доставки в полночь ограничена. Подробности
+                           уточняйте у
+                           оператора.</p>
+                     </div>
+                  </div>
+                  <div class="delivery__descriptions-col">
+                     <div>
+                        <h3>Доставка по Ленинградской области</h3>
+                        <p>Форма оплаты - наличными и безналичный расчет. География, стоимость и сроки доставки - см.
+                           таблицу ниже. Заказы
+                           доставляются курьером по указанному покупателем адресу после предварительного звонка.</p>
+                     </div>
+                     <br>
+                     <br>
+                     <div>
+                        <h3>Стоимость доставки по городу и пригородам</h3>
+                        <p>В черте города выделяется часть труднодоступных районов города и выносится в отдельную зону
+                           доставки.</p>
+                        <p><b>В зоне 1</b> - город: возможна доставка «день в день» от 1 часа и к точному времени.</p>
+                        <p>
+                           <b>В зонах 2, 3, 4 и 5</b> – доставка «день в день» в зависимости от удаленности места
+                           доставки от нашего склада, от часа и
+                           более. Возможна доставка «день в день» в интервале, и в интервале менее четырех часов.
+                        </p>
+                        <p class="color-grey text-small">
+                           * Допускается техническое опоздание курьера до 15 минут. В случае серьезного опоздания
+                           покупателю гарантируется возврат
+                           стоимости доставки.
+                        </p>
+                        <p class="color-grey text-small">* На крупногабаритные товары, требующие спецтранспорта доставка
+                           считается
+                           отдельно.</p>
+                        <p class="color-grey text-small">* Возможность доставки в полночь ограничена. Подробности
+                           уточняйте у
+                           оператора.</p>
+                     </div>
+                     <br>
+                     <br>
+                     <div>
+                        <h3>Типы доставок</h3>
+                        <p><b>Тип №1</b> - Доставка в интервале 4 часов.</p>
+                        <p><b>Тип №2</b> - Доставка в интервале менее 4 часов для зоны 1, 2, 3, 4 и 5 (при доставках
+                           день в
+                           день).</p>
+                        <p>
+                           <b>Тип №3</b> - К точному времени - заказ к точному времени, оформление на сайте возможно не
+                           ранее
+                           чем через 4 часа от момента
+                           оформления заказа.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="delivery__zones">
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Зоны</th>
+                           <th>Тип 1</th>
+                           <th>Тип 2</th>
+                           <th>Тип 3</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td><b>ЗОНА 1</b><br>
+                              Город в пределах КАД (кроме удаленных и труднодоступных районов Города)</td>
+                           <td>300</td>
+                           <td>500</td>
+                           <td>600</td>
+                        </tr>
+                        <tr>
+                           <td><b>ЗОНА 2</b><br>
+                              (удаленные и труднодоступные районы города) Авиагородок, Аэропорт Пулково, Заневский пост,
+                              Китайгород, Красный Октябрь,
+                              Кудрово, Мега Дыбенко, Мега Парнас, Мурино, Новая (Муринская дорога), Новое Девяткино,
+                              Парголово, Пискаревка, Ржевка,
+                              Сергиево, Сосновая Поляна, Старо-Паново, Трудпром (Рябовское шоссе), Уткина заводь,
+                              Шувалово, Шушары</td>
+                           <td>500</td>
+                           <td>700</td>
+                           <td>800</td>
+                        </tr>
+                        <tr>
+                           <td><b>ЗОНА 3</b><br>
+                              Александровская, Бугры, Вартемяги, Всеволожск, Горбунки, Горелово, Горская, Западная Лица,
+                              Им. Свердлова, Павловск,
+                              Князево, Колпино, Колтуши, Красное Село, Кузьмоловский, Левашово, Ленсоветовский, Лисий
+                              Нос, Марьино, Металлострой,
+                              Низино, Новосаратовка, Новоселье, Ольгино, Песочный, Петергоф, Понтонный, Порошкино,
+                              Пушкин, Разбегаево, Разметелево,
+                              Романовка, Санино, Сашино, Сертолово, Сестрорецк, Славянка, Старая, Стрельна, Токсово,
+                              Торики, Усть-Ижора, Юкки,
+                              Юнтолово, Янино-1, Янино-2, Усть-Славянка</td>
+                           <td>700</td>
+                           <td>1000</td>
+                           <td>1200</td>
+                        </tr>
+                        <tr>
+                           <td><b>ЗОНА 4</b><br>
+                              Агалатово, Аннолово, Белоостров, Виллози, Дунай, Ексолово, Елизаветинка, Ириновка,
+                              Касимово, Кронштадт, Келози, Кипень,
+                              Кировск, Комарово, Коммунар, Лепсари, Лесколово, Лимузи, Ломоносов, Малое Верево, Медное
+                              Озеро, Монделево, Никольское,
+                              Новое Токсово, Оржицы,Осельки, Отрадное, Павлово, Пески, Петровское, Покровское, Поркузи,
+                              Проба, Пудость, Рахья, Репино,
+                              Русско-Высоцкое, Саперный, Солнечное, Тайцы, Тельмана, Тосно, Федоровское, Форносово,
+                              Щеглово, Шлиссельбург</td>
+                           <td>1000</td>
+                           <td>1500</td>
+                           <td>1700</td>
+                        </tr>
+                        <tr>
+                           <td><b>ЗОНА 5</b><br>
+                              Бегуницы, Большая Ижора, Васкелово, Волосово, Вырица, Гарболово, Дружная Горка,
+                              Елизаветино, Зеленогорск, Ильичёво,
+                              Керро, Лебяжье, Ленинское, Лесное, Лисино-Корпус, Лопухинка, Любань, Назия, Орехово,
+                              Приладожский, Рощино, Рябово,
+                              Сельцо, Сиверский, Стеклянный, Шапки</td>
+                           <td>2500</td>
+                           <td>3000</td>
+                           <td>-</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="delivery__map">
+                  <iframe src="https://yandex.ru/map-widget/v1/-/CCUR7Tv89A" id="sem_order_maps" style=""></iframe>
+                  <div class="delivery__map-info">
+                     <p>Если у Вас остались вопросы, позвоните нам по телефону <a href="tel:+78124267651">
+                           +7 812 426-76-51</a> и наши менеджеры с удовольствием Вас проконсультируют!</p>
+                     <a href="catalog.html" class="green-button">Перейти в каталог</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer style="background: rgb(244, 244, 244); padding-bottom: 50px;">
+   <p style="text-align: center;padding: 30px 0;">FOOTER</p>
+</footer>
+
+      <!--Корзина-->
+      <div class="cart-popup">
+         <div class="cart-popup__content">
+            <div class="cart-popup__body">
+               <div class="cart-popup__title">Корзина</div>
+               <div class="cart-popup__products">
+                  <div class="cart-popup__product cart-product">
+                     <div class="cart-product__image">
+                        <img src="img/products/1.png" alt="">
+                     </div>
+                     <div class="cart-product__info">
+                        <p class="cart-product__name">Букет из 51 белой пионовидной розы Titanium 40 см</p>
+                        <div class="product-preview__price discount-price">
+                           <div class="price-procente">-25%</div>
+                           <span class="actual-price">263 790 ₽</span>
+                           <span class="old-price">363 790 ₽</span>
+                        </div>
+                        <div class="quantity-input">
+                           <div class="quantity-input-left">
+                              <span class="quantity-input-remove"><img src="img/icons/remove.svg" alt=""></span>
+                              <span class="quantity-input-minus"><img src="img/icons/minus.svg" alt=""></span>
+                           </div>
+                           <input type="number" value="1">
+                           <div class="quantity-input-right">
+                              <span class="quantity-input-plus"><img src="img/icons/plus.svg" alt=""></span>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="cart-popup__product cart-product">
+                     <div class="cart-product__image">
+                        <img src="img/products/sert.png" alt="">
+                     </div>
+                     <div class="cart-product__info">
+                        <p class="cart-product__name">Топпер Семицветик "Я люблю тебя"</p>
+                        <div class="product-preview__price">
+                           <span class="actual-price">200 ₽</span>
+                        </div>
+                        <div class="quantity-input">
+                           <div class="quantity-input-left">
+                              <span class="quantity-input-remove"><img src="img/icons/remove.svg" alt=""></span>
+                              <span class="quantity-input-minus"><img src="img/icons/minus.svg" alt=""></span>
+                           </div>
+                           <input type="number" value="1">
+                           <div class="quantity-input-right">
+                              <span class="quantity-input-plus"><img src="img/icons/plus.svg" alt=""></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="cart-popup__complement">
+                  <p class="cart-popup__subtitle">Комплект</p>
+                  <div class="cart-popup__product cart-product">
+                     <div class="cart-product__image">
+                        <img src="img/products/1.png" alt="">
+                     </div>
+                     <div class="cart-product__info">
+                        <p class="cart-product__name">Топпер Семицветик "Я люблю тебя"</p>
+                        <div class="product-preview__price">
+                           <span class="actual-price">4 090 ₽</span>
+                        </div>
+                        <div class="quantity-input">
+                           <div class="quantity-input-left">
+                              <span class="quantity-input-remove"><img src="img/icons/remove.svg" alt=""></span>
+                              <span class="quantity-input-minus"><img src="img/icons/minus.svg" alt=""></span>
+                           </div>
+                           <input type="number" value="1">
+                           <div class="quantity-input-right">
+                              <span class="quantity-input-plus"><img src="img/icons/plus.svg" alt=""></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <span class="cart-popup__sign">+</span>
+                  <div class="cart-popup__product cart-product">
+                     <div class="cart-product__image">
+                        <img src="img/products/sert.png" alt="">
+                     </div>
+                     <div class="cart-product__info">
+                        <p class="cart-product__name">Топпер Семицветик "Я люблю тебя"</p>
+                        <div class="product-preview__price">
+                           <span class="actual-price">200 ₽</span>
+                        </div>
+                        <div class="quantity-input">
+                           <div class="quantity-input-left">
+                              <span class="quantity-input-remove"><img src="img/icons/remove.svg" alt=""></span>
+                              <span class="quantity-input-minus"><img src="img/icons/minus.svg" alt=""></span>
+                           </div>
+                           <input type="number" value="1">
+                           <div class="quantity-input-right">
+                              <span class="quantity-input-plus"><img src="img/icons/plus.svg" alt=""></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <span class="cart-popup__sign">=</span>
+                  <div class="product-preview__price discount-price">
+                     <div class="price-procente">-25%</div>
+                     <span class="actual-price">263 790 ₽</span>
+                     <span class="old-price">363 790 ₽</span>
+                  </div>
+               </div>
+            </div>
+            <div class="cart-popup__advice">
+               <section class="quantity-carousel quantity-carousel-xl">
+                  <div class="quantity-carousel__body container">
+                     <div class="quantity-carousel__title">Советуем так же</div>
+                     <div class="cart-carousel__slider quantity-carousel__slider-cart swiper">
+                        <div class="quantity-carousel__wrapper swiper-wrapper">
+                           <div class="quantity-carousel__slide swiper-slide">
+                              <div class="product-preview">
+                                 <a href="product.html" class="product-preview__image">
+                                    <img src="img/products/1.png" alt="">
+                                 </a>
+                                 <div class="product-preview__info">
+                                    <a href="product.html" class="product-preview__name">Топпер Семицветик "Я люблю
+                                       тебя"</a>
+                                    <div class="product-preview__buy">
+                                       <div class="product-preview__price">
+                                          <span class="actual-price">200 ₽</span>
+                                       </div>
+                                       <button class="product-preview__add-cart" aria-label="Добавить в корзину">
+                                          <svg class="product-preview__basket">
+                                             <use xlink:href="img/icons/icons.svg#basket"></use>
+                                          </svg>
+                                          <svg class="product-preview__check">
+                                             <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                          </svg>
+                                       </button>
+                                       <button class="product-preview__add-wishlist" aria-label="Добавить в избранное">
+                                          <svg class="product-preview__heart">
+                                             <use xlink:href="img/icons/icons.svg#heart"></use>
+                                          </svg>
+                                          <svg class="product-preview__heart-fill">
+                                             <use xlink:href="img/icons/icons.svg#heart-fill"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="quantity-carousel__slide swiper-slide">
+                              <div class="product-preview">
+                                 <a href="product.html" class="product-preview__image">
+                                    <img src="img/products/2.png" alt="">
+                                 </a>
+                                 <div class="product-preview__info">
+                                    <a href="product.html" class="product-preview__name">Ваза Трубка 25см</a>
+                                    <div class="product-preview__buy">
+                                       <div class="product-preview__price discount-price">
+                                          <div class="price-procente">-5%</div>
+                                          <div class="product-preview__buy-prices">
+                                             <span class="actual-price">990 ₽</span>
+                                             <span class="old-price">1 190 ₽</span>
+                                          </div>
+                                       </div>
+                                       <button class="product-preview__add-cart" aria-label="Добавить в корзину">
+                                          <svg class="product-preview__basket">
+                                             <use xlink:href="img/icons/icons.svg#basket"></use>
+                                          </svg>
+                                          <svg class="product-preview__check">
+                                             <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                          </svg>
+                                       </button>
+                                       <button class="product-preview__add-wishlist" aria-label="Добавить в избранное">
+                                          <svg class="product-preview__heart">
+                                             <use xlink:href="img/icons/icons.svg#heart"></use>
+                                          </svg>
+                                          <svg class="product-preview__heart-fill">
+                                             <use xlink:href="img/icons/icons.svg#heart-fill"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="quantity-carousel__slide swiper-slide">
+                              <div class="product-preview">
+                                 <a href="product.html" class="product-preview__image">
+                                    <img src="img/products/1.png" alt="">
+                                 </a>
+                                 <div class="product-preview__info">
+                                    <a href="product.html" class="product-preview__name">Топпер Семицветик "Я люблю
+                                       тебя"</a>
+                                    <div class="product-preview__buy">
+                                       <div class="product-preview__price discount-price">
+                                          <div class="price-procente">-25%</div>
+                                          <div class="product-preview__buy-prices">
+                                             <span class="actual-price">200 ₽</span>
+                                             <span class="old-price">14 900 ₽</span>
+                                          </div>
+                                       </div>
+                                       <button class="product-preview__add-cart" aria-label="Добавить в корзину">
+                                          <svg class="product-preview__basket">
+                                             <use xlink:href="img/icons/icons.svg#basket"></use>
+                                          </svg>
+                                          <svg class="product-preview__check">
+                                             <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                          </svg>
+                                       </button>
+                                       <button class="product-preview__add-wishlist" aria-label="Добавить в избранное">
+                                          <svg class="product-preview__heart">
+                                             <use xlink:href="img/icons/icons.svg#heart"></use>
+                                          </svg>
+                                          <svg class="product-preview__heart-fill">
+                                             <use xlink:href="img/icons/icons.svg#heart-fill"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="quantity-carousel__slide swiper-slide">
+                              <div class="product-preview">
+                                 <a href="product.html" class="product-preview__image">
+                                    <img src="img/products/2.png" alt="">
+                                 </a>
+                                 <div class="product-preview__info">
+                                    <a href="product.html" class="product-preview__name">Ваза Трубка 25см</a>
+                                    <div class="product-preview__buy">
+                                       <div class="product-preview__price discount-price">
+                                          <div class="price-procente">-5%</div>
+                                          <div class="product-preview__buy-prices">
+                                             <span class="actual-price">990 ₽</span>
+                                             <span class="old-price">1 190 ₽</span>
+                                          </div>
+                                       </div>
+                                       <button class="product-preview__add-cart" aria-label="Добавить в корзину">
+                                          <svg class="product-preview__basket">
+                                             <use xlink:href="img/icons/icons.svg#basket"></use>
+                                          </svg>
+                                          <svg class="product-preview__check">
+                                             <use xlink:href="img/icons/icons.svg#basket-check"></use>
+                                          </svg>
+                                       </button>
+                                       <button class="product-preview__add-wishlist" aria-label="Добавить в избранное">
+                                          <svg class="product-preview__heart">
+                                             <use xlink:href="img/icons/icons.svg#heart"></use>
+                                          </svg>
+                                          <svg class="product-preview__heart-fill">
+                                             <use xlink:href="img/icons/icons.svg#heart-fill"></use>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="cart-carousel__slide-prev slider-button-prev">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#arrow"></use>
+                        </svg>
+                     </div>
+                     <div class="cart-carousel__slide-next slider-button-next">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#arrow"></use>
+                        </svg>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="cart-popup__total">
+               <p>В корзине 3 товара</p>
+               <p>Итого <span>18 330 ₽</span></p>
+
+               <div class="cart-popup__order">
+                  <a href="checkout.html" class="green-button">Оформить заказ</a>
+               </div>
+            </div>
+            <button class="cart-popup__close" aria-label="Закрыть корзину">
+               <img src="img/icons/close-thin.svg" alt="">
+            </button>
+         </div>
+      </div>
+      <!--моб меню-->
+      <div class="mobile-menu">
+         <a href="" class="mobile-menu__item active">
+            <img src="img/icons/home.svg" alt="">
+            <span>Главная</span>
+         </a>
+         <a href="" class="mobile-menu__item">
+            <img src="img/icons/grid.svg" alt="">
+            <span>Каталог</span>
+         </a>
+         <a href="" class="mobile-menu__item">
+            <img src="img/icons/cart.svg" alt="">
+            <span>Корзина</span>
+            <span class="cart-quantity">1</span>
+         </a>
+         <a href="" class="mobile-menu__item">
+            <img src="img/icons/search.svg" alt="">
+            <span>Поиск</span>
+         </a>
+         <a href="" class="mobile-menu__item">
+            <img src="img/icons/user-1.svg" alt="">
+            <span>Профиль</span>
+         </a>
+      </div>
+   </div>
+
+
+
+
+   <script src="js/air-datepicker.min.js"></script>
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/app.js"></script>
+</body>
+
+</html>
